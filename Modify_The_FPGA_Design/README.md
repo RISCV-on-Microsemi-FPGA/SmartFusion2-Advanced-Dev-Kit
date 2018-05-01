@@ -1,8 +1,8 @@
 # SmartFusion2 Advanced development Kit RISC-V Sample FPGA Designs 
 Sample RISC-V Libero projects for the SmartFusion2 (M2S150) Advanced Development Kit.
 
-This project contains Libero projects containing FPGA designs including a RISC-V RV32IM soft processor. 
-Programming bitstreams are also included so you don't have to run through the full FPGA design flow in order to start developing software for RISC-V.
+This folder contains Libero projects containing FPGA designs including a RISC-V soft processor. 
+Programming bit-streams are also included so you don't have to run through the full FPGA design flow in order to start developing software for RISC-V.
 
 ### Design Feature
 The FPGA Designs include the following features
@@ -26,7 +26,7 @@ The memory map for each design is available within each Libero project.
    Uses legacy CoreRISCV_AXI4 soft processor. Contains a sample RISCV design which allows users to use basic peripherals such as GPIO, UART and Timers.
 
 ### Target Hardware
-The SmartFusion2 Advanced developement Board includes a SmartFusion2 M2S150 FPGA. Details of the features available for this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/smartfusion2-advanced-development-kit).
+The SmartFusion2 Advanced development Board includes a SmartFusion2 M2S150 FPGA. Details of the features of this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/smartfusion2-advanced-development-kit).
 
 ### Target Mi-V CPU
 Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/Mi-V-CPUs).
