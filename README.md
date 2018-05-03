@@ -23,4 +23,4 @@ A set of RISC-V example software projects are available for these designs from t
 The SmartFusion2 Advanced Development Kit includes a SmartFusion2 M2S150 SoC FPGA. Details of the features of this development board are available [here](http://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/smartfusion2-advanced-development-kit).
 
 ### Target Mi-V CPU
-Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/Mi-V-CPUs).
+Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).

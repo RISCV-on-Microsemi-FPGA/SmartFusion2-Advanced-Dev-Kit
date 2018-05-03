@@ -29,11 +29,11 @@ The memory map for each design is available within each Libero project.
 The SmartFusion2 Advanced development Board includes a SmartFusion2 M2S150 FPGA. Details of the features of this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/smartfusion2-advanced-development-kit).
 
 ### Target Mi-V CPU
-Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/Mi-V-CPUs).
+Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).
 
 ### Modifying the Libero projects
 Some of the Libero projects use IP packages may not be  directly available from the Microsemi IP Catalog. These IP packages were created to speed up design creation by wrapping simple logic into reusable user IP packages.
-These user IP packages are available [here](https://github.com/Mi-V-Ecosystem/Mi-V-CPUs/tree/master/Supporting-IPs).
+These user IP packages are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs/tree/master/Supporting-IPs).
 
 If you are using a design with CoreRISCV_AXI4 soft processor based design, please note that you may need to uncomment "`define USE_REGISTERS" in file coreriscv_axi4_defines.v in order to reduce RAM blocks usage. 
 You will need to do this anytime you regenerate the top level SmartDesign in Libero.
