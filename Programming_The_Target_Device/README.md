@@ -10,7 +10,7 @@ Please note that you only need to install this standalone version of FlashPro Ex
    Flashpro Express project and Programming file for the Libero design [MIV_RV32IMA_AHB_BaseDesign](https://github.com/RISCV-on-Microsemi-FPGA/SmartFusion2-Advanced-Dev-Kit/tree/master/Modify_The_FPGA_Design)
 
 ### Target Hardware
-The SmartFusion2 Advance Development Kit includes a SmartFusion2 M2S150 FPGA. Details of the features available for this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/smartfusion2-advanced-development-kit).
+The SmartFusion2 Advanced Development Kit includes a SmartFusion2 M2S150 FPGA. Details of the features available for this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/smartfusion2-advanced-development-kit).
 
 ### Target Mi-V CPU
 Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).
