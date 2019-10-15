@@ -1,17 +1,17 @@
-## SmartFusion2 Advanced Development Kit RISC-V Designs for Libero v12.1
+## SmartFusion2 Security Evaluation Kit RISC-V Designs for Libero v12.1
 
-Sample Mi-V Libero projects for the SmartFusion2 (M2S150TS) Advanced Development Kit.
+Sample Mi-V Libero projects for the SmartFusion2 (M2S090TS) Security Evaluation Kit.
 
 To get your design download or clone this repository. The files consist of .tcl file that is the main script that builds the design and support files that are called by it to provide constraints and components for the design. Follow the instructions below to build your own design or alternatively use the pre-generated Programming Files in this repository.
 
 #### Follow these steps
 
-- Launch Libero v12.1 on your computer. Wait for Libero to start.
-- Make sure you have the latest Libero Cores. Select Catalog tab from the left hand side toolbar and click "Download Latest Cores" option by a yellow marked area, this option will only be visible if you don't have the latest Cores.
+- Launch Libero v12.1 on your computer. Wait for Libero to start. (Design will only work for Libero v12.1)
+- Make sure you have __Downloaded the latest Libero Cores__. Select Catalog tab from the left hand side toolbar and click __"Download Latest Cores"__ option by a yellow marked area, this option will only be visible if you don't have the latest Cores.
 - Press "CTRL+U" to display the "Execute Script" menu. Alternatively, click Project from the top left hand corner of Libero Suite and select "Execute Script" from there.
 - Examine the image below, the purpose of the marked fields is listed.
 
- ![Execute_Script](https://github.com/MiV-Libero-Designs/Sample-Board-Solutions/blob/master/board_images/libero_execute.PNG)
+ ![Execute_Script](images/libero_execute.PNG)
 
 1. Click the "..." button and enter the directory in which the main .tcl file is that you have downloaded with your sample project. This file
 is what Libero executes to build your design.
@@ -24,8 +24,9 @@ is what Libero executes to build your design.
       - Place_and_Route
       - Generate_Bitstream
       - Generate_Programming_File
-	  
-![Script's_Arguments](https://github.com/MiV-Libero-Designs/Sample-Board-Solutions/blob/master/board_images/libero_execute_optional.png)
+
+
+![Script's_Arguments](images/libero_execute_optional.png)
 
 #### Programming the Device using FPExpress
 
@@ -40,6 +41,7 @@ Please note that you only need to install this standalone version of FlashPro Ex
 
 #### Notes
 
+- Currently the designs support MiV_RV32IMA_L1_AHB Core only, Core MiV_RV32IMA_L1_AXI will be implemented in the next update
 - The project is built in the same folder as the script.
 - If you stop the execution of a the script halfway the project can get corrupted. If this happens, delete the project folder created by Libero and execute the script again, otherwise just try running the script again.
 - The arguments serve the purpose to take the user further down the design flow, they use the most optimal settings for design build.
