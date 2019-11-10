@@ -108,8 +108,11 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
     puts "--------------------------PLACE AND ROUTE--------------------------------"
     puts "-------------------------------------------------------------------------"
 	
-	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true}
-	run_tool -name {PLACEROUTE}
+	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true}
+	get_tool_state -name {COMPILE} 
+	get_tool_state -name {SYNTHESIZE} 
+	get_flow_state 
+	configure_tool -name {PLACEROUTE} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664}
 	run_tool -name {VERIFYTIMING}
 	save_project
 
@@ -119,8 +122,11 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
     puts "--------------------GENERATING PROGRAMMING FILES-------------------------"
     puts "-------------------------------------------------------------------------"
 
-	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true}
-	run_tool -name {PLACEROUTE}
+	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true}
+	get_tool_state -name {COMPILE} 
+	get_tool_state -name {SYNTHESIZE} 
+	get_flow_state 
+	configure_tool -name {PLACEROUTE} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664}
 	run_tool -name {VERIFYTIMING}
     run_tool -name {GENERATEPROGRAMMINGDATA}
     run_tool -name {GENERATEPROGRAMMINGFILE}
@@ -131,8 +137,11 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
     puts "----------------------EXPORT PROGRAMMING FILES---------------------------"
     puts "-------------------------------------------------------------------------"
 
-	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true}
-	run_tool -name {PLACEROUTE}
+	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true}
+	get_tool_state -name {COMPILE} 
+	get_tool_state -name {SYNTHESIZE} 
+	get_flow_state 
+	configure_tool -name {PLACEROUTE} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664}
 	run_tool -name {VERIFYTIMING}
 
 	if {"$target" == "AHB"} then {
