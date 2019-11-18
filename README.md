@@ -1,4 +1,4 @@
-## PolarFire Evaluation Kit RISC-V Designs
+## SmartFusion2 Advanced Development Kit RISC-V Designs
 
 Sample Mi-V Libero projects for the SmartFusion2 (M2S150TS and M2S150) Advanced Development Kit.
 
