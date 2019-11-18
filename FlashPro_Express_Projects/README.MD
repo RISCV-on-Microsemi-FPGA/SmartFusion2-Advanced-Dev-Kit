@@ -1,6 +1,6 @@
 ## SmartFusion2 Advanced Development Kit RISC-V Designs FlashPro Express Programming Files (Libero v12.1)
 
-Sample Mi-V FlashPro Express files for the SmartFusion2 (M2S150TS) and (M2S150) Advanced Development Kits.
+Sample Mi-V FlashPro Express files for the SmartFusion2 (M2S150TS and M2S150) Advanced Development Kit.
 
 ### FlashPro Express
 This folder contains default build, exported programming files, there is a choice to use an AXI or AHB Core based design. Each (.job) file is capapble of programming your target device using the standalone installer for FlashPro Express which can be found [here](https://www.microsemi.com/product-directory/programming/4977-flashpro#software).
