@@ -1,5 +1,5 @@
 /*=============================================================*/
-/* Created by Microsemi SmartDesign Wed Sep 18 15:25:53 2019   */
+/* Created by Microsemi SmartDesign Wed Jan 15 11:25:08 2020   */
 /*                                                             */
 /* Warning: Do not modify this file, it may lead to unexpected */
 /*          functional failures in your design.                */
@@ -10,7 +10,7 @@
 #define SYS_CONFIG_MSS_CLOCKS
 
 #define MSS_SYS_M3_CLK_FREQ             50000000u
-#define MSS_SYS_MDDR_CLK_FREQ           100000000u
+#define MSS_SYS_MDDR_CLK_FREQ           150000000u
 #define MSS_SYS_APB_0_CLK_FREQ          50000000u
 #define MSS_SYS_APB_1_CLK_FREQ          50000000u
 #define MSS_SYS_APB_2_CLK_FREQ          12500000u
