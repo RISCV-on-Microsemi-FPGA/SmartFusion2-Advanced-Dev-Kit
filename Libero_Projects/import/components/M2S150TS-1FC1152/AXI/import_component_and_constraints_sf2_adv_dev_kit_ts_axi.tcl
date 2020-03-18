@@ -1,6 +1,6 @@
-set project_folder_name MiV_AXI_SF2_Adv_Dev_Kit_TS
+set project_folder_name MiV_AXI_BD
 set project_dir2 "./$project_folder_name"
-set Libero_project_name MiV_AXI_BaseDesign
+
 
 
 puts "-------------------------------------------------------------------------"
