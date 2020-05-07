@@ -1,26 +1,49 @@
-# SmartFusion2 Advanced Development Kit RISC-V Designs
-Sample Mi-V Libero projects for the SmartFusion2 (M2S150) Advanced Development Kit.
+## SmartFusion2 Advanced Development Mi-V Sample Designs
 
-This repository contains Libero projects containing an FPGA design including a RISC-V soft processor. 
-The Programming bit-stream(s) are also included so that you do not need to run through the full FPGA design flow 
-in order to start developing software for RISC-V.
+This repository contains Libero projects for the MIV_RV32IMA_L1_AHB and MIV_RV32IMA_L1_AXI soft core RISC-V processors.
+FlashPro Express projects containing pre-generated programming files are also available for each of the designs.
 
-### Modify The FPGA Design 
-The Modify_The_FPGA_Design folder contains Libero example designs. Libero is Microsemi's FPGA design tool. 
-You will need this tool if you wish to modify the example FPGA designs. Libero is available from [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
+To download or clone the repository:
 
-### Programming The Target Device
-The Programming_The_Target_Device folder includes FlashPro Express projects that can be used to program the 
-development boards FPGA. A standalone installer for FlashPro Express is available [here](http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software). 
-Please note that you only need to install this standalone version of FlashPro Express if you do not have Libero tools installed.
+    $ git clone https://github.com/RISCV-on-Microsemi-FPGA/SmartFusion2-Advanced-Dev-Kit.git
 
-A programming file resulting from the corresponding Libero design in "Modify_The_FPGA_Design" folder is available in "Programming The Target Device" for easy access.
+    $ Running from the zipped sources
+    1. Download the zipped sources via the "Clone or download" button using "Download Zip" button
+    2. Unzip the sources
 
-### Example Software Projects
-A set of RISC-V example software projects are available for these designs from the SoftConsole [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole).
+
+# Libero Projects
+The Libero_Projects folder contains sample Mi-V Libero designs.
+
+## Design Features
+The Libero designs include the following features:
+* A MIV_RV32IMA_L1_AHB or MIV_RV32IMA_L1_AXI soft RISC-V [processor](https://github.com/RISCV-on-Microsemi-FPGA/CPUs)
+* RISC-V debug block allowing on-target debug using SoftConsole
+* The operating frequency of the design is 50MHz
+* Target memory is LSRAM
+* User peripherals (GPIO, Timers, UART)
 
 ### Target Hardware
-The SmartFusion2 Advanced Development Kit includes a SmartFusion2 M2S150 SoC FPGA. Details of the features of this development board are available [here](http://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/smartfusion2-advanced-development-kit).
+Details of the SmartFusion2 Advanced Development Kit and it's features can be found:
+* SmartFusion2-Adv-Dev-Kit (M2S150) [here](https://www.microsemi.com/existing-parts/parts/143965).
 
-### Target Mi-V CPU
-Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).
+# FlashPro Express
+The FlashPro_Express_Projects folder contains the pre-generated programming files, which can be downloaded directly to the target board using FlashPro Express.
+
+# Design Tools
+The following design tools are required.
+
+## Libero SoC v12.3
+Libero SoC is Microsemi's FPGA design software.
+It is available from [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
+
+## FlashPro Express
+FlashPro Express is Microsemi's Programming and debug tool. It is included in the Libero SoC software and is also
+available as a standalone application found [here](http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software). Please note, that if Libero SoC is already on your system, you do not need
+the standalone version.
+
+## SoftConsole
+SoftConsole is Microsemi’s free software development environment facilitating the rapid development of bare-metal and RTOS based C/C++ software for Microsemi CPU and SoC based FPGAs. It provides development and debug support for all Microsemi SoC FPGAs and 32-bit soft IP CPUs. SoftConsole can be downloaded [here](https://www.microsemi.com/product-directory/design-tools/4879-softconsole).  
+
+### SoftConsole Projects
+A set of RISC-V example software projects are also available for these designs from the SoftConsole [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole).
