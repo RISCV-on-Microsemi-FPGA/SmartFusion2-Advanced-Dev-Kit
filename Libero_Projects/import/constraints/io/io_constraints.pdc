@@ -51,6 +51,54 @@ set_io {GPIO_IN[1]}   \
     # -DIRECTION INPUT
 
 
+# set_io {GPIO_IN[4]}   \
+    # -pinname G27      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+
+
+# set_io {GPIO_IN[5]}   \
+    # -pinname H27      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+
+
+# set_io {GPIO_IN[6]}   \
+    # -pinname F23      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+
+
+# set_io {GPIO_IN[7]}   \
+    # -pinname G23      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+
+
+# set_io {GPIO_IN[8]}   \
+    # -pinname J25      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+
+
+# set_io {GPIO_IN[9]}   \
+    # -pinname J24      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+
+
+# set_io {GPIO_IN[10]}  \
+    # -pinname H25      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+
+
+# set_io {GPIO_IN[11]}  \
+    # -pinname H23      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+
+
 set_io {GPIO_OUT[0]}   \
     -pinname D26       \
     -fixed yes         \
@@ -113,6 +161,12 @@ set_io TX              \
 
 
 # Additional Constraints
+
+# set_io DEVRST_N       \
+    # -pinname AE5      \
+    # -DIRECTION INPUT
+
+
 # set_io SPISCLKO        \
     # -pinname P6       \
     # -fixed yes         \
@@ -138,9 +192,9 @@ set_io TX              \
 
 
 # set_io CLK0_PAD       \
-    -pinname P1       \
-    -fixed yes        \
-    -DIRECTION INPUT
+    # -pinname P1       \
+    # -fixed yes        \
+    # -DIRECTION INPUT
 
 
 
